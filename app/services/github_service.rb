@@ -1,6 +1,9 @@
 class GithubService
 
   attr_reader :access_token
+  # We will have to access the access token. Is session[:tokem] the same as the access token?
+
+  # These are the refactored methods from the controllers.
 
   def initialize(access_hash = nil)
     @access_token = access_hash["access_token"] if access_hash

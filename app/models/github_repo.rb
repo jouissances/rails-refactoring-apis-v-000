@@ -1,4 +1,5 @@
 class GithubRepo
+# We are not inheriting from ActiveRecord::Base because we are not dealing with our own database here.
 
   attr_reader :name, :url
 
